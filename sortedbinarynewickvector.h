@@ -77,14 +77,12 @@ struct SortedBinaryNewickVector
 
   static bool NewickCompare(
     const std::vector<int>& lhs,
-    const std::vector<int>& rhs);
+    const std::vector<int>& rhs
+  );
 
 };
 
 bool operator<(const SortedBinaryNewickVector& lhs, const SortedBinaryNewickVector& rhs);
-
-//const std::string ToString(const SortedBinaryNewickVector& n,
-//  const bool add_brackets = true);
 
 } //~namespace ribi
 

@@ -89,8 +89,9 @@ std::string ribi::SortedBinaryNewickVector::ToStr() const
   return newick::NewickToString(Peek());
 }
 
- double ribi::SortedBinaryNewickVector::CalcDenominator(
-   const double theta) const
+double ribi::SortedBinaryNewickVector::CalcDenominator(
+  const double theta
+) const
 {
   return newick::CalcDenominator(Peek(),theta);
 }
