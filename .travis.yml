@@ -29,15 +29,12 @@ before_script:
 
 script: 
   # Build and start test
-  - qmake BinaryNewickVectorTest.pro
+  - qmake SortedBinaryNewickVectorTest.pro
   - make debug
-  - ./BinaryNewickVectorTest
+  - ./SortedBinaryNewickVectorTest
   # Get code coverage
   - ./get_code_cov.sh
   - codecov
-  # Build the demo
-  - qmake TestBinaryNewickVectorDesktop.pro
-  - make
   # OCLint
   - ./do_oclint.sh
 
