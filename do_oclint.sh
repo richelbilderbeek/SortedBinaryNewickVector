@@ -8,9 +8,10 @@ h_files=`ls *.h | egrep -v "^ui_.*\.h$"`
   $cpp_files \
   $h_files \
   -- \
-  -c -std=c++14 -fPIC \
-  -I../ConceptMap \
+  -c -std=c++14 \
+  -I../BinaryNewickVector \
   -I../Newick \
+  -I../NewickVector \
   -I../QtConceptMap \
   -I../RibiClasses/CppAbout \
   -I../RibiClasses/CppContainer \
@@ -23,18 +24,11 @@ h_files=`ls *.h | egrep -v "^ui_.*\.h$"`
   -I../RibiClasses/CppMenuDialog \
   -I../RibiClasses/CppPlane \
   -I../RibiClasses/CppQtAboutDialog \
-  -I../RibiClasses/CppQtArrowItem \
   -I../RibiClasses/CppQtHideAndShowDialog \
-  -I../RibiClasses/CppQtKeyboardFriendlyGraphicsView \
-  -I../RibiClasses/CppQtQuadBezierArrowItem \
-  -I../RibiClasses/CppQtRoundedEditRectItem \
-  -I../RibiClasses/CppQtRoundedRectItem \
-  -I../RibiClasses/CppQtScopedDisable \
   -I../RibiClasses/CppRibiRegex \
   -I../RibiClasses/CppTrace \
   -I../RibiClasses/CppXml \
-  -I../BoostGraphTutorial/BoostGraphTutorial \
-  -I../StyleSheetSetter \
+  -I../SortedBinaryNewickVector \
   -I../RibiLibraries/Apfloat \
   -I../RibiLibraries/bigint-2010.04.30 \
   -I/usr/include/c++/5 \
